@@ -1,0 +1,62 @@
+@use "../helpers" as *;
+@use "../variables" as *;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding-top: to-rem(25);
+
+  &__container {
+    @include flex(row, space-between, center);
+    width: 100%;
+    padding-inline: fluid(60, 20);
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    max-width: to-rem(120);
+
+    @include hover {
+      opacity: 0.7;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    @include flex(row, flex-end, center, 15);
+  }
+
+  &__text {
+    font-size: to-rem(13);
+    line-height: 1;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  &__burger {
+    @include flex(column, center, center, 4);
+    width: to-rem(24);
+    height: to-rem(24);
+
+    span {
+      display: block;
+      width: to-rem(20);
+      height: to-rem(2);
+      background-color: $text-color;
+      transition:
+        transform $transition-duration,
+        opacity $transition-duration;
+    }
+
+    @include hover {
+      opacity: 0.7;
+    }
+  }
+}

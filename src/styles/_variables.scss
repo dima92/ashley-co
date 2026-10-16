@@ -1,0 +1,32 @@
+@use "helpers/functions" as *;
+
+// Сетка
+$container-width: 1440;
+$container-padding-x: 15;
+
+// Анимации
+$transition-duration: 0.3s;
+$transition-base: all $transition-duration ease-in-out;
+
+// Шрифты
+$font-family: "Roboto", sans-serif;
+
+// ==========================================================================
+// ЦВЕТОВАЯ ПАЛИТРА (UI-KIT) — ПРОЕКТ ASHLEY&CO
+// ==========================================================================
+
+$white-color: #fff;
+$black-color: #000;
+
+$text-color: #262626;
+$grey-color: #b2b2b2;
+$grey-alt-color: #ccc;
+$light-color: #f1f1ee;
+$light-alt-color: #ebebeb;
+$dark-color: #1b1b1b;
+$light-grey-color: #504b4d;
+
+$yellow-hero: #e7f066;
+$muddy-green: #9c8554;
+$dusty-pink: #a26779;
+$burnt-orange: #b04836;
